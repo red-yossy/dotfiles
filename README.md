@@ -201,7 +201,23 @@ terminal を再起動してみてください。
 
 でも、できます。
 
+最後に設定ファイルを作って終わり。
+
+```
+% touch ~/.zshrc
+```
+
+中身は、とりあえず空で。
+
 ## Neovim 
+
+![alt text](https://neovim.io/images/logo@2x.png "xcode Logo")
+
+vim でも良かったけれど、どうせなら Neovim に乗り換えようかと思い立つ。
+
+emacs の人は関係ないかなー。
+
+
 
 ----
 備忘録なのに、説明口調になってしまう。。。病気かな？
