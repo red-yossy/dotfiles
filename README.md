@@ -86,6 +86,80 @@ cpp-netlib
 
 アップデートがあるとこんな感じになる。
 
+ちなみに、 brew を使った場合は実体のインストール先が
+
+```
+/usr/local/Cellar/
+```
+
+になります。そこへのリンクを
+
+```
+/usr/local/bin/
+```
+
+の下に配置することで、パッケージの有効/無効を切り替えたりするんですねー。
+
+使うときは、ここにあるリンクから使うことになります。
+
+```/usr/local/bin/``` へのパスはデフォルトで通っているはず。。。
+
 ## zsh
+bash や他の shell が好みの場合は、入れなくても大丈夫。
+
+入力補完が強力だと知って、 zsh に乗り換える。
+
+インスコ。
+
+```
+% brew install zsh
+```
+
+ログインシェルを zsh に変更する。
+
+とりあえず、現在変更可能な shell を見てみる。
+
+```
+% cat /etc/shells
+# List of acceptable shells for chpass(1).
+# Ftpd will not allow users to connect who are not using
+# one of these shells.
+
+/bin/bash
+/bin/csh
+/bin/ksh
+/bin/sh
+/bin/tcsh
+/bin/zsh
+```
+
+zsh があるが、brew で入れた zsh を使いたいので、これに加える。
+
+brew でインスコしたものは、アップデートとかの管理もしやすいので。
+
+上でも書きましたが、brew のインスコ先は
+
+```
+/usr/local/bin/
+```
+
+の下になるので、
+
+```
+/usr/local/bin/zsh
+```
+
+を shells に書き加えればいいわけです。
+
+shells の権限は root なので、書き換える時は sudo を使います。
+
+```
+% sudo vi /etc/shells
+```
+
+エディタはなんでも構いません。
+
+書き加えたら、もう一度 shells を見て見ましょう。
+
 
 ## Neovim 
