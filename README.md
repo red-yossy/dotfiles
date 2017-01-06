@@ -161,5 +161,47 @@ shells の権限は root なので、書き換える時は sudo を使います�
 
 書き加えたら、もう一度 shells を見て見ましょう。
 
+```
+% cat /etc/shells
+# List of acceptable shells for chpass(1).
+# Ftpd will not allow users to connect who are not using
+# one of these shells.
+
+/bin/bash
+/bin/csh
+/bin/ksh
+/bin/sh
+/bin/tcsh
+/bin/zsh
+/usr/local/bin/zsh
+```
+
+ちゃんと、追加できたらこんな感じになるはず。
+
+それでは、ログインシェルを zsh に変更します。
+
+ログインシェルの変更は、chsh コマンドを使います。
+
+```
+% chsh -s /usr/local/bin/zsh
+```
+
+これで完了。
+
+terminal を再起動してみてください。
+
+タイトルに zsh って出てれば成功です。
+
+ちなみに、現在の shell の確認は、
+
+```
+% echo $SHELL
+/usr/local/bin/zsh
+```
+
+でも、できます。
 
 ## Neovim 
+
+----
+備忘録なのに、説明口調になってしまう。。。病気かな？
