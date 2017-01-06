@@ -26,6 +26,8 @@ xcode-select: node: install requested for command line developer tools
 ポップアップが出てくるので、インストールする。同意も。
 
 ## Homebrew
+![alt text](http://brew.sh/img/homebrew-256x256.png "brew Logo")
+
 http://brew.sh/index_ja.html
 
 Apple が用意してない、私に必要なものをインストールしてくれます。
@@ -34,7 +36,7 @@ Apple が用意してない、私に必要なものをインストールして�
 
 言わずと知れた、 mac のパッケージ管理soft。
 
-上記の page に載っている以下のコマンドを実行。
+上記の URL に載っている以下のコマンドを実行。
 
 
 ```
@@ -45,7 +47,7 @@ Apple が用意してない、私に必要なものをインストールして�
 
 途中、パスワードやらを求められる。
 
-インスコが終わると、 brew docotor を実行しろと言われます。
+インスコが終わると、 brew doctor を実行しろと言われます。
 
 インストールが正常に行われたかをチェックしてくれるんですね。
 
