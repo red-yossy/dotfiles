@@ -13,6 +13,8 @@ macbook にイチから開発環境を構築したので、メモメモ。
 インスコしていったものを入れた順番に列挙
 
 ## Xcode
+![alt text](http://is2.mzstatic.com/image/thumb/Purple122/v4/b1/09/03/b10903fa-09c8-0efa-3dfd-88bb37b691fc/source/175x175bb.png "xcode Logo")
+
 AppStore にて入手。手順は省略。
 
 ## Command Line Tools for Xcode
