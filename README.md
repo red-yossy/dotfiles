@@ -15,6 +15,8 @@ macbook にイチから開発環境を構築したので、メモメモ。
 ## Xcode
 ![alt text](http://is2.mzstatic.com/image/thumb/Purple122/v4/b1/09/03/b10903fa-09c8-0efa-3dfd-88bb37b691fc/source/175x175bb.png "xcode Logo")
 
+https://itunes.apple.com/jp/app/xcode/id497799835?mt=12
+
 AppStore にて入手。手順は省略。
 
 ## Command Line Tools for Xcode
@@ -36,9 +38,9 @@ Apple が用意してない、私に必要なものをインストールして�
 
 これがなきゃ、やってられない。
 
-言わずと知れた、 mac のパッケージ管理soft。
+言わずと知れた、 mac のパッケージ管理システム。
 
-上記の URL に載っている以下のコマンドを実行。
+インスコは上記の URL に載っている以下のコマンドを実行。
 
 
 ```
@@ -105,6 +107,8 @@ cpp-netlib
 ```/usr/local/bin/``` へのパスはデフォルトで通っているはず。。。
 
 ## zsh
+http://www.zsh.org/
+
 bash や他の shell が好みの場合は、入れなくても大丈夫。
 
 入力補完が強力だと知って、 zsh に乗り換える。
@@ -213,10 +217,48 @@ terminal を再起動してみてください。
 
 ![alt text](https://neovim.io/images/logo@2x.png "xcode Logo")
 
+https://neovim.io/
+
 vim でも良かったけれど、どうせなら Neovim に乗り換えようかと思い立つ。
 
 emacs の人は関係ないかなー。
 
+インスコは、brew で
+
+```
+% brew install neovim/neovim/neovim
+```
+
+インスコできたら、起動。
+
+```
+% nvim
+```
+
+ここで、エラーを吐いたら残念。
+
+エラーの対処法は結構載っているので、gg ってください。
+
+今まで、vim を使っていた場合は、vim の設定を移行できるので、
+
+それも ggる。
+
+とりあえず、設定ファイルを作成する。
+
+```
+% mkdir -p ~/.config/nvim
+```
+
+```
+% touch ~/.config/nvim/init.vim
+```
+
+```init.vim``` が vim でいう ```.vimrc``` になるんですねー。
+
+vim の設定を移行する場合は、init.vim がリンクになって、
+```.vimrc```を参照するようにするみたいです。
+
+## dein.vim
 
 
 ----
