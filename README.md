@@ -1,9 +1,9 @@
 # My Settings
 もの忘れが酷いので、備忘録。
 
-macbookにイチから開発環境を構築したので、メモメモ。
+macbook にイチから開発環境を構築したので、メモメモ。
 
-今回は、pythonの環境を整える。
+今回は、python の環境を整える。
 
 ## develop environment
 開発環境は、特に意味なし
@@ -13,23 +13,75 @@ macbookにイチから開発環境を構築したので、メモメモ。
 インスコしていったものを入れた順番に列挙
 
 ## Xcode
-AppStoreにて入手。手順は省略。
+AppStore にて入手。手順は省略。
 
 ## Command Line Tools for Xcode
-Homebrewをインスコするために、こいつが必要。
+Homebrew をインスコするために、こいつが必要。
 
 ```
-	$ xcode-select --install
-	xcode-select: node: install requested for command line developer tools
+% xcode-select --install
+xcode-select: node: install requested for command line developer tools
 ```
+
+ポップアップが出てくるので、インストールする。同意も。
 
 ## Homebrew
 http://brew.sh/index_ja.html
 
-Appleが用意してない、私に必要なものをインストールしてくれます。
+Apple が用意してない、私に必要なものをインストールしてくれます。
+
 これがなきゃ、やってられない。
 
-言わずと知れた、macのパッケージ管理
+言わずと知れた、 mac のパッケージ管理soft。
+
+上記の page に載っている以下のコマンドを実行。
+
+
+```
+% /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+実行すると、ワラワラとインストールを進めてくれます。
+
+途中、パスワードやらを求められる。
+
+インスコが終わると、 brew docotor を実行しろと言われます。
+
+インストールが正常に行われたかをチェックしてくれるんですね。
+
+優しい。
+
+```
+% brew doctor
+Your system is ready to brew.
+```
+
+これで、 Homebrew のインスコは終わり。
+
+かんたん簡単。バージョン確認。
+
+```
+% brew -v
+Homebrew 1.1.6
+Homebrew/homebrew-core (git revision 8b64; last commit 2017-01-04)
+```
+
+とりあえず、入れたらアップデートしておく。
+
+```
+% brew update
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+aws-sdk-cpp         libmill             ripgrep             youtube-dl
+cromwell            lsyncd              tippecanoe
+elixir              node                transcrypt
+gtk+3               node-build          wireguard-tools
+==> Deleted Formulae
+cpp-netlib
+```
+
+アップデートがあるとこんな感じになる。
+
 ## zsh
 
 ## Neovim 
