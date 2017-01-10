@@ -215,7 +215,7 @@ terminal を再起動してみてください。
 
 ## Neovim 
 
-![alt text](https://neovim.io/images/logo@2x.png "xcode Logo")
+![alt text](https://neovim.io/images/logo@2x.png "neovim Logo")
 
 https://neovim.io/
 
@@ -377,6 +377,30 @@ endif
 
 "End dein Scripts-------------------------
 ```
+
+最後の
+
+```
+call dein#install() 
+```
+
+部分は、コメントアウトを外しておくとインストールされていないものが、
+
+起動時にインストールされる。
+
+init.vim にこの設定をコピペしたら、nvim を起動する。
+
+```
+% nvim hoge.txt
+```
+
+起動時にわらわらとインストールされたら、成功。
+
+TOML ファイルによるプラグイン管理については、後で書くので dein.vim のインストールはここまで。
+
+# python
+
+
 
 ----
 
