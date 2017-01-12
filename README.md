@@ -213,6 +213,37 @@ terminal を再起動してみてください。
 
 中身は、とりあえず空で。
 
+## zsh-completions
+
+https://github.com/zsh-users/zsh-completions
+
+zsh の補完機能を使うためのパッケージ。
+
+これがあるから、zsh にしたと言っても過言ではない。
+
+インストール。
+
+```
+% brew install zsh-completions
+```
+
+```.zshrc``` に以下の記述を。
+
+```
+fpath=(/path/to/homebrew/share/zsh-completions $fpath)
+
+autoload -U compinit
+compinit -u
+```
+
+zcompdump をリビルド。
+
+```
+% rm -f ~/.zcompdump; compinit
+```
+
+zsh を再起動すると、補完が拡張されているはず。
+
 ## Neovim 
 
 ![alt text](https://neovim.io/images/logo@2x.png "neovim Logo")
