@@ -477,10 +477,15 @@ virtualenv は python の仮想環境を作るツールです。
 
 を変えられる。
 
+virtualenvwrapper は virtualenv で作った環境を削除しやすくするためのツール。
+
+インスコは、pip を使う。
+
 ```
 % pip install virtualenv virtualenvwrapper --ignore-installed six
 ```
 
+virtualenvwrapper を有効にするために、.zshrc に以下の設定を追記。
 
 ```
 # virtualenv 設定
