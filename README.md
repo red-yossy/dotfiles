@@ -493,6 +493,11 @@ export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 ```
 
+とりあえず。インスコはここまで。
+
+なんか、足りてない気がする。思い出したら。追記。
+
+
 ----
 
 備忘録なのに、説明口調になってしまう。。。病気かな？
