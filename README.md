@@ -438,6 +438,11 @@ TOML ファイルによるプラグイン管理については、後で書くの
 
 # python
 
+![alt text](https://www.python.org/static/img/python-logo@2x.png "pyhton_logo")
+
+https://www.python.org/
+
+python をインストール。
 
 
 ----
