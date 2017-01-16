@@ -17,19 +17,21 @@ macbook にイチから開発環境を構築したので、メモメモ。
 
 http://iterm2.com/index.html
 
+プリインの terminal でも問題ないのだが、とりあえず iTerm2 を入れておく。
+
 ## Xcode
 ![alt text](http://is2.mzstatic.com/image/thumb/Purple122/v4/b1/09/03/b10903fa-09c8-0efa-3dfd-88bb37b691fc/source/175x175bb.png "xcode Logo")
 
 https://itunes.apple.com/jp/app/xcode/id497799835?mt=12
 
-AppStore にて入手。手順は省略。
+開発者ツールを入手。
+AppStore にてインスコ。手順は省略。
 
 ## Command Line Tools for Xcode
 Homebrew をインスコするために、こいつが必要。
 
 ```
 % xcode-select --install
-xcode-select: node: install requested for command line developer tools
 ```
 
 ポップアップが出てくるので、インストールする。同意も。
