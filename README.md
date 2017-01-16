@@ -12,6 +12,11 @@ macbook にイチから開発環境を構築したので、メモメモ。
 ## install softwares
 インスコしていったものを入れた順番に列挙
 
+## iTerm2
+![alt text](http://iterm2.com/img/logo.jpg "xcode Logo")
+
+http://iterm2.com/index.html
+
 ## Xcode
 ![alt text](http://is2.mzstatic.com/image/thumb/Purple122/v4/b1/09/03/b10903fa-09c8-0efa-3dfd-88bb37b691fc/source/175x175bb.png "xcode Logo")
 
@@ -244,7 +249,7 @@ zcompdump をリビルド。
 
 zsh を再起動すると、補完が拡張されているはず。
 
-## Neovim 
+## Neovim
 
 ![alt text](https://neovim.io/images/logo@2x.png "neovim Logo")
 
@@ -412,7 +417,7 @@ endif
 最後の
 
 ```
-call dein#install() 
+call dein#install()
 ```
 
 部分は、コメントアウトを外しておくとインストールされていないものが、
