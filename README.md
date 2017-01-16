@@ -436,14 +436,57 @@ init.vim にこの設定をコピペしたら、nvim を起動する。
 
 TOML ファイルによるプラグイン管理については、後で書くので dein.vim のインストールはここまで。
 
-# python
+## python
 
 ![alt text](https://www.python.org/static/img/python-logo@2x.png "pyhton_logo")
 
 https://www.python.org/
 
-python をインストール。
+python3 をインストール。
+pythonは、2.x 系と 3.x 系がある。
 
+```
+% brew install python3
+```
+
+これで完了。
+
+バージョン確認。
+
+```
+% python3 -V
+Python 3.6.0
+```
+
+## pip
+
+python のパッケージ管理システム
+
+```
+% easy_install pip
+```
+
+## virtualenv & virtualenvwrapper
+
+virtualenv は python の仮想環境を作るツールです。
+
+環境ごとに、
+
+- python のバージョン
+- 使用するパッケージやそのバージョン
+
+を変えられる。
+
+```
+% pip install virtualenv virtualenvwrapper --ignore-installed six
+```
+
+
+```
+# virtualenv 設定
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+```
 
 ----
 
