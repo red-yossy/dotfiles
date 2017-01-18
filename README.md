@@ -493,6 +493,12 @@ export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 ```
 
+shell の起動が遅くなるようでしたら、virtualenvwrapper.sh を遅延読み込みにする。
+
+```
+source /usr/local/bin/virtualenvwrapper_lazy.sh
+```
+
 とりあえず。インスコはここまで。
 
 なんか、足りてない気がする。思い出したら。追記。
