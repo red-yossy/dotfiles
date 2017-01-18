@@ -1,0 +1,36 @@
+# コード補完
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+# neosnippet 用の辞書
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+# 行末の whitespace を可視化・削除
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+# nvim から任意のファイルを開く
+[[plugins]]
+repo = 'Shougo/unite.vim'
+# 複数行のコメントアウト
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+# インデント可視化
+# [[plugins]]
+# repo = 'Yggdroot/indentLine'
+# ステータスバーの機能拡充
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+# ディレクトリのツリー表示
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+# 括弧などの自動閉じ
+[[plugins]]
+repo = 'AutoClose'
+# 補完機能拡充
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+# ファイル操作のサポート
+[[plugins]]
+repo = 'Shougo/vimfiler'
+# neovim から git 操作
+[[plugins]]
+repo = 'tpope/vim-fugitive'
