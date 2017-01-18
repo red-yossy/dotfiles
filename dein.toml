@@ -20,8 +20,8 @@ repo = 'tomtom/tcomment_vim'
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 # ディレクトリのツリー表示
-[[plugins]]
-repo = 'scrooloose/nerdtree'
+# [[plugins]]
+# repo = 'scrooloose/nerdtree'
 # 括弧などの自動閉じ
 [[plugins]]
 repo = 'AutoClose'
@@ -34,3 +34,6 @@ repo = 'Shougo/vimfiler'
 # neovim から git 操作
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+# neovim からシェルを起動する
+[[plugins]]
+repo = 'Shougo/vimshell.vim'

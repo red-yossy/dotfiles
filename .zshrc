@@ -190,7 +190,7 @@ export PATH=$PATH:/usr/local
 
 # virtualenv 設定
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # alias
 alias vi='nvim'
@@ -200,4 +200,10 @@ alias vizshrc='nvim ~/dotfiles/.zshrc'
 alias viinitvim='nvim ~/dotfiles/init.vim'
 alias vitoml='nvim ~/dotfiles/dein.toml'
 alias vilazy='nvim ~/dotfiles/dein_lazy.toml'
+
+# 起動時間測定用
+# ~/.zshenv の方も設定必要
+# if (which zprof > /dev/null); then
+#   zprof | cat
+# fi
 
